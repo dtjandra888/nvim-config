@@ -1,6 +1,6 @@
--- Disabling netrw
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- Disabling netrw; Uncomment if you want to enable
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPlugin = 1
 
 return {
   "nvim-tree/nvim-tree.lua",
@@ -12,4 +12,5 @@ return {
   config = function()
     require("nvim-tree").setup {}
   end,
+  enable = false
 }
