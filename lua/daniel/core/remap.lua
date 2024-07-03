@@ -2,7 +2,18 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<esc>")
 
 -- Open Directory Listing
-vim.keymap.set("n", "<leader>t", vim.cmd.Ex)
+function OpenNewTab()
+    vim.cmd("tabnew")
+    vim.cmd("Ex")
+end
+
+vim.keymap.set("n", "<leader>t",
+function()
+	vim.cmd("tabnew")
+	vim.cmd("Ex")
+end, {noremap = true})
+
+
 
 -- Copy/Paste from system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y")

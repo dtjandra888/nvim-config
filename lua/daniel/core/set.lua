@@ -19,3 +19,10 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
+
+-- function TabPage()
+--     local current_tabpage = vim.api.nvim_get_current_tabpage()
+--     return current_tabpage
+-- end
+--
+-- vim.cmd(string.format("autocmd FileType netrw nmap <buffer> <CR> t<leader>%d:q<CR>"), TabPage() - 1)
