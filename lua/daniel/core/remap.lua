@@ -1,18 +1,18 @@
 vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<esc>")
 
--- Open Directory Listing
-function OpenNewTab()
-    vim.cmd("tabnew")
-    vim.cmd("Ex")
-end
-
+-- New Tab
 vim.keymap.set("n", "<leader>t",
-function()
-	vim.cmd("tabnew")
-	vim.cmd("Ex")
-end, {noremap = true})
+    function()
+        vim.cmd("tabnew")
+        vim.cmd("Ex")
+    end, { noremap = true })
 
+-- Explorer in current tab
+vim.keymap.set("n", "<leader>e",
+    function()
+        vim.cmd("Ex")
+    end, { noremap = true })
 
 
 -- Copy/Paste from system clipboard
