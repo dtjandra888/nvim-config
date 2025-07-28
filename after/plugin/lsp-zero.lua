@@ -14,7 +14,7 @@ require('mason-lspconfig').setup({
     ensure_installed = {
         'pylsp',
         'lua_ls',
-        'gopls',
+        --         'gopls',
         'clangd'
     }
 })
@@ -25,5 +25,5 @@ require('mason-lspconfig').setup({
 
 require 'lspconfig'.pylsp.setup {}
 require 'lspconfig'.lua_ls.setup {}
-require 'lspconfig'.gopls.setup {}
+-- require 'lspconfig'.gopls.setup {}
 require 'lspconfig'.clangd.setup {}
