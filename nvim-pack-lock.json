@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "telescope.nvim": {
+      "rev": "5255aa27c422de944791318024167ad5d40aad20",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    }
+  }
+}

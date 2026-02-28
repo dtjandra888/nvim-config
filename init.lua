@@ -1,2 +1,7 @@
-require("daniel.core")
-require("daniel.lazy")
+require("core")
+
+
+vim.pack.add({
+'https://github.com/nvim-telescope/telescope.nvim'
+})
+
