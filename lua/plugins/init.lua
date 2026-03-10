@@ -4,9 +4,11 @@ vim.pack.add({
     'https://github.com/sainnhe/sonokai',
     'https://github.com/neovim/nvim-lspconfig',
     'https://github.com/nvim-lua/plenary.nvim',
+    'https://github.com/nvim-treesitter/nvim-treesitter',
 })
 
 -- Configuration in separate files
 require("plugins.colorscheme")
 require("plugins.lsp")
 require("plugins.telescope")
+require("plugins.treesitter")
