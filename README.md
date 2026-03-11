@@ -10,16 +10,19 @@ Finding:
 Tabs:
 - Open New Tab: <Space>t
 - Explorer: <Space>e
+- Go to tab number: <Space><number>
 
 LSP:
 - Language format: <Space>lf
-- See error on cursor: <C-e>
 - List errors: <Space>le
-
+- Go to definition: gd
+- Go to declaration: gD
+- Go to implementation: gi
+- Find all reference: gr
+- Show function param: <C-k>
 
 
 ### Plugins
 :TSUpdate
 - Update tree sitter parsers
-
 
