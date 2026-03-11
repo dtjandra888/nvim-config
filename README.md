@@ -1,17 +1,21 @@
 ## Command Cheat Sheet
 
 ### Editing
-Find Files: <Space>ff 
-Find From Git Files: <Space>fg
-Find Buffers: <Space>fb
-Find Help Tags: <Space>fh
-Find Selected Word: <Space>fw
-Find Word through grep: <Spaace>fi
+Finding:
+- Find Files: <Space>ff
+- Find Buffers: <Space>fb
+- Find Selected Word: <Space>fw
+- Find Word through grep: <Spaace>fi
 
-Git Status: <Space>gs
+Tabs:
+- Open New Tab: <Space>t
+- Explorer: <Space>e
 
-Open New Tab: <Space>t
-Explorer: <Space>e
+LSP:
+- Language format: <Space>lf
+- See error on cursor: <C-e>
+- List errors: <Space>le
+
 
 
 ### Plugins
