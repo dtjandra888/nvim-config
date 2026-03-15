@@ -14,8 +14,10 @@ vim.keymap.set("n", "<leader>e",
         vim.cmd("Ex")
     end, { noremap = true })
 
--- Remapping visual block mode for WSL
-vim.api.nvim_set_keymap('n', '<leader>v', '<C-v>', { noremap = true })
+vim.keymap.set('i', '<C-Space>', '<C-x><C-o>', { silent = true })
+
+-- Remapping visual block mode for WSL; I use Ctrl-q now
+-- vim.api.nvim_set_keymap('n', '<leader>v', '<C-v>', { noremap = true })
 
 -- Copy/Paste from system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y")
