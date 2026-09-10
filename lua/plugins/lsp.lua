@@ -32,9 +32,40 @@ vim.api.nvim_create_autocmd('CursorHold', {
     end
 })
 
+vim.lsp.config('svelte', {
+  cmd = { 'bunx', 'svelteserver', '--stdio' },
+  filetypes = { 'svelte' },
+  root_markers = {
+    'svelte.config.js',
+    'svelte.config.ts',
+    'package.json',
+    '.git',
+  },
+})
+
+-- No lsp-config for rust apparently
+vim.lsp.config('rust-analyzer', {
+  cmd = { 'rust-analyzer' },
+  filetypes = { 'rust' },
+  root_markers = { 'Cargo.toml', '.git' },
+  settings = {
+    ['rust-analyzer'] = {
+      cargo = {
+        allFeatures = true,
+      },
+      checkOnSave = {
+        command = "clippy",
+      },
+    },
+  },
+})
+
 -- List lsps as their cmd
 vim.lsp.enable({
     'lua_ls',
-    --    'pylsp', -- Disable for now since it isnt installed
+    'pylsp',
     'clangd',
+    'svelte',
+    'rust-analyzer',
 })
+
