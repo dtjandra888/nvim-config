@@ -26,3 +26,6 @@ vim.opt.scrolloff = 8
 -- end
 --
 -- vim.cmd(string.format("autocmd FileType netrw nmap <buffer> <CR> t<leader>%d:q<CR>"), TabPage() - 1)
+--
+
+vim.g.netrw_banner = 1
